@@ -1,140 +1,171 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="To-do List Changelog">
         <meta name="keywords" content="To-do List, Changelog, Trinh Nguyen">
         <meta name="author" content="Trinh Nguyen">
 
         <title>To-do List Changelog</title>
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
     </head>
     <body>
         <header>
             <nav class="navbar">
-                <h3><a href="#">Changelog</a></h3>
+                <h3>To-do List</h3>
             </nav>
         </header>
         <main>
             <div class="page-title">
-                <h4>Changelog</h4>
+                <h1>Changelog</h1>
                 <p class="subheading recent">Here's everything we have shipped in the past few days</p>
             </div>
-            <div class="main-content">
+            <div class="content main">
                 <ul>
                     <li>
-                        <div>
-                            <p>August 29, 2025 - v2.1.2</p>
-                            <p>Added changelog page</p>
+                        <div class="changelog-item">
+                            <p class="date">August 28, 2025 - v2.1.1</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Added documentation and about page</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 28, 2025 - v2.1.1</p>
-                            <p>Added documentation and about page</p>
+                        <div class="changelog-item">
+                            <p class="date">August 26, 2025 - v2.1.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Add AI assistant on template creation and autocomplete</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 26, 2025 - v2.1.0</p>
-                            <p>Add AI assistant on template creation and autocomplete</p>
+                        <div class="changelog-item">
+                            <p class="date">August 21, 2025 - v2.0.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Added recommendation feature</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 21, 2025 - v2.0.0</p>
-                            <p>Added recommendation feature</p>
+                        <div class="changelog-item">
+                            <p class="date">August 17, 2025 - v1.7.1</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Added template store feature</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="changelog-item">
+                            <p class="date">August 21, 2025 - v1.7.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Added template feature</p>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="expand-toggle">
-                <div>
-                    <a href="#all">View all updates and changes</a>
-                </div>
-            </div>
-            <div class="expandable-content" id="all">
+            <input type="checkbox" id="toggle">
+            <!-- <div class="expand-toggle"> -->
+                <label for="toggle" class="btn expand">Show more</label>
+            <!-- </div> -->
+            <div class="content expandable">
                 <ul>
                     <li>
-                        <div>
-                            <p>August 17, 2025 - v1.7.1</p>
-                            <p>Added template store feature</p>
+                        <div class="changelog-item">
+                            <p class="date">August 19, 2025 - v1.6.1</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Integrated with Google Calendar</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 21, 2025 - v1.7.0</p>
-                            <p>Added template feature</p>
+                        <div class="changelog-item">
+                            <p class="date">August 17, 2025 - v1.6.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Add login via Google, Outlook</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 19, 2025 - v1.6.1</p>
-                            <p>Integrated with Google Calendar</p>
+                        <div class="changelog-item">
+                            <p class="date">August 15, 2025 - v1.5.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Add repeatable tasks feature</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 17, 2025 - v1.6.0</p>
-                            <p>Add login via Google, Outlook</p>
+                        <div class="changelog-item">
+                            <p class="date">August 13, 2025 - v1.4.1</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Fixed task list's author security vulnerability</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 15, 2025 - v1.5.0</p>
-                            <p>Add repeatable tasks feature</p>
+                        <div class="changelog-item">
+                            <p class="date">August 11, 2025 - v1.4.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Add collaborator feature</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 13, 2025 - v1.4.1</p>
-                            <p>Fixed task list's author security vulnerability</p>
+                        <div class="changelog-item">
+                            <p class="date">August 7, 2025 - v1.3.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Add shareable task list feature</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 11, 2025 - v1.4.0</p>
-                            <p>Add collaborator feature</p>
+                        <div class="changelog-item">
+                            <p class="date">August 5, 2025 - v1.2.1</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Fixed account security vulnerability</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 7, 2025 - v1.3.0</p>
-                            <p>Add shareable task list feature</p>
+                        <div class="changelog-item">
+                            <p class="date">August 2, 2025 - v1.2.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Add sign up and log in features for all devices</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 5, 2025 - v1.2.1</p>
-                            <p>Fixed account security vulnerability</p>
+                        <div class="changelog-item">
+                            <p class="date">July 30, 2025 - v1.1.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Add local memory for storing tasks</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>August 2, 2025 - v1.2.0</p>
-                            <p>Add sign up and log in features for all devices</p>
+                        <div class="changelog-item"x>
+                            <p class="date">July 28, 2025 - v1.0.1</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Added changelog page</p>
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <p>July 30, 2025 - v1.1.0</p>
-                            <p>Add local memory for storing tasks</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>July 27, 2025 - v1.0.0</p>
-                            <p>Official release of To-do List</p>
+                        <div class="changelog-item">
+                            <p class="date">July 27, 2025 - v1.0.0</p>
+                            <div class="dot"><div></div></div>
+                            <div class="sep-line"><div></div></div>
+                            <p class="description">Official release of To-do List</p>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="shrink-toggle">
-                <div><a href="#">Show less</a></div>
-            </div>
+            <label for="toggle" class="btn collapse">Show less</label>
         </main>
         <footer>
-            <p>&copy; Copyright 2025 To-do List</p>
+            <h6>&copy; Copyright 2025 To-do List</h6>
         </footer>
     </body>
 </html> 
