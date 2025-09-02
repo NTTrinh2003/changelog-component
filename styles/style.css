@@ -1,0 +1,169 @@
+/* MAIN CSS FILE */
+
+* {
+    list-style-type: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default margins */
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.content {
+    margin: 0 10rem 0 20rem;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header > nav {
+    height: 100%;
+}
+
+header h3 {
+    margin: 0;
+}
+
+/* MAIN CONTENT */
+
+main {
+    margin-top: 5rem;
+    align-items: center;
+}
+
+/** Page title **/
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-title * {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Changelog items */
+ul li .changelog-item {
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+        "date   dot-line     descr";
+    grid-template-columns: 14rem 40px 1fr;
+}
+
+/* Item decorations */
+ul li div .dot {
+    display: flex;
+    grid-area: dot-line;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li div .dot div {
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+ul li div .sep-line {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    grid-area: dot-line;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li div .sep-line div {
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li div .date {
+    grid-area: date;
+    text-align: end;
+}
+
+ul li div .description {
+    grid-area: descr;
+}
+
+/* EXPAND AND SHRINK BUTTONS */
+.btn {
+    display: block;
+    width: 6rem;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* EXPANDABLE CONTENT */
+#toggle {
+    display: none;
+}
+
+.content.expandable {
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: all ease-in-out 0.7s;
+}
+
+#toggle:checked ~ .content.expandable {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#toggle:checked ~ .expand {
+    display: none;
+}
+
+#toggle:checked ~ .collapse {
+    display: block;
+}
+
+#toggle:not(:checked) ~ .collapse {
+    display: none;
+}
+
+/* FOOTER */
+
+h6 {
+    text-align: center;
+    padding: 0 1rem;
+}
