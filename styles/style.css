@@ -130,6 +130,12 @@ ul li div .description {
     background-color: #000;
     color: #fff;
     text-align: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #444;
 }
 
 /* EXPANDABLE CONTENT */
@@ -138,53 +144,19 @@ ul li div .description {
 }
 
 .content.expandable {
-    /* display: none; */
-    /* max-height: 0; */
-    transform-origin: top;
-    transform: scaleY(0);
-    opacity: 0;
-    transition: all ease-in-out 0.5s;
-}
-
-.content.expandable * {
-    /* display: none; */
-    margin-top: 0;
-    margin-bottom: 0;
-    transform-origin: top;
-    /* transform: scaleY(0); */
-    /* opacity: 0; */
-    transition: all ease-in-out 0.1s;
-}
-
-.content.expandable li {
+    max-height: 0;
     transform-origin: top;
     transform: scaleY(0);
     opacity: 0;
     transition: all ease-in-out 0.3s;
+    overflow: hidden;
 }
 
 #toggle:checked ~ .content.expandable {
-    /* display: block; */
-    /* height: fit-content; */
+    max-height: 1000vh;     /* Ensure large enough for any content */
     opacity: 1;
     transform: scaleY(1);
 }
-
-#toggle:checked ~ .content.expandable * {
-    opacity: 1;
-    transform: scaleY(1);
-}
-
-#toggle:checked ~ .content.expandable p {
-    margin: 1rem 0;
-}
-
-#toggle:checked ~ .content.expandable li {
-    display: list-item;
-    opacity: 1;
-    transform: scaleY(1);
-}
-
 
 #toggle:checked ~ .expand {
     display: none;
@@ -203,4 +175,12 @@ ul li div .description {
 h6 {
     text-align: center;
     padding: 0 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .content {
+        margin: 0 1rem;
+    }
 }
